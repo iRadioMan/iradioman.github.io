@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#F7F9FC">
+  <title>Вектор — веб-планировщик задач на Go и Vue 3</title>
+  <meta name="description" content="Вектор — веб-планировщик задач на Go и Vue 3. Списки «Сегодня», «Предстоящие» и «Все задачи», категории, приоритеты, сроки и поиск. Данные хранятся в локальной SQLite. Сборка из исходного кода.">
+  <link rel="canonical" href="https://iradioman.github.io/taskvector/">
+  <link rel="icon" href="../assets/img/favicon.png" sizes="32x32" type="image/png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="rad.io">
+  <meta property="og:title" content="Вектор — веб-планировщик задач на Go и Vue 3">
+  <meta property="og:description" content="Вектор — веб-планировщик задач на Go и Vue 3. Списки «Сегодня», «Предстоящие» и «Все задачи», категории, приоритеты, сроки и поиск. Данные хранятся в локальной SQLite. Сборка из исходного кода.">
+  <meta property="og:url" content="https://iradioman.github.io/taskvector/">
+  <meta property="og:image" content="https://iradioman.github.io/assets/img/taskvector-screenshot.png">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../">
+        <img class="brand-logo" src="../assets/img/taskvector-logo.png" alt="" width="32" height="32">
+        <span class="brand-name">Вектор</span>
+      </a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a href="../">Страница разработчика</a>
+        <a href="https://github.com/iRadioMan" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Хлебные крошки"><a href="../">← Все проекты</a></nav>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="product-lockup">
+              <img src="../assets/img/taskvector-logo.png" alt="" width="72" height="72">
+              <div>
+                <p class="eyebrow">Задачи под контролем</p>
+                <h1>Вектор</h1>
+              </div>
+            </div>
+            <p class="slogan">«Сегодня», «Предстоящие», «Все задачи» — и ни одна задача не потеряется.</p>
+            <p class="lead">Ведите задачи по категориям, ставьте приоритеты и сроки, отмечайте выполнение и находите нужное поиском. Данные хранятся в локальной базе SQLite.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#start">Быстрый старт</a>
+              <a class="btn btn-secondary" href="https://github.com/iRadioMan/TaskVector" target="_blank" rel="noopener noreferrer">Исходный код</a>
+            </div>
+            <ul class="trust-list">
+              <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Go и Vue 3</li>
+              <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>SQLite без отдельного сервера</li>
+              <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Русский и английский</li>
+            </ul>
+          </div>
+          <figure class="shot">
+            <img src="../assets/img/taskvector-screenshot.png" width="1509" height="914" alt="Окно программы «Вектор»: боковая панель со списками и категориями, список задач с приоритетами и сроками." fetchpriority="high" decoding="async">
+            <figcaption>Все задачи: поиск, сортировка по времени или приоритету, сроки и категории.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <h2>Что умеет Вектор</h2>
+          <p>Списки, категории, приоритеты и сроки — в одном веб-интерфейсе.</p>
+        </div>
+        <!-- Иконки: Lucide, ISC -->
+        <div class="features-grid">
+          <article class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m3 17 2 2 4-4"/>
+                <path d="m3 7 2 2 4-4"/>
+                <path d="M13 6h8"/>
+                <path d="M13 12h8"/>
+                <path d="M13 18h8"/>
+              </svg>
+            </div>
+            <h3>Списки и поиск</h3>
+            <p>Разделы «Сегодня», «Предстоящие», «Все задачи» и «Выполненные», поиск задач и сортировка по времени или приоритету.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                <path d="M4 22v-7"/>
+              </svg>
+            </div>
+            <h3>Приоритеты и сроки</h3>
+            <p>Отмечайте важные задачи высоким приоритетом и указывайте срок. Даты показываются по-человечески: «Завтра», «В субботу».</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>
+              </svg>
+            </div>
+            <h3>Категории</h3>
+            <p>Создавайте свои категории и раскладывайте по ним задачи. Рядом с каждой категорией видно количество задач.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <h3>Аккаунты и изоляция</h3>
+            <p>Самостоятельная регистрация и вход с сессией в HttpOnly cookie. Записи изолированы по пользователю, пароли хранятся как Argon2id-хеши.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+              </svg>
+            </div>
+            <h3>Темы и языки</h3>
+            <p>Светлая и тёмная тема, интерфейс на русском и английском. Выбор сохраняется в браузере, раскладка подстраивается под экран.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                <path d="M3 5v14a9 3 0 0 0 18 0V5"/>
+                <path d="M3 12a9 3 0 0 0 18 0"/>
+              </svg>
+            </div>
+            <h3>Локальные данные</h3>
+            <p>По умолчанию всё хранится в файле taskvector.db. Отдельный сервер базы данных не нужен.</p>
+          </article>
+        </div>
+        <p class="audience">Подойдёт для личных задач и небольших рабочих списков, которые удобнее держать на своём сервере.</p>
+      </div>
+    </section>
+
+    <section class="section" id="start">
+      <div class="container">
+        <div class="download-head">
+          <div>
+            <h2>Запуск</h2>
+            <p class="version">Готовых сборок пока нет — проект собирается из исходного кода · <a href="https://github.com/iRadioMan/TaskVector" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+          </div>
+        </div>
+        <div class="start-grid">
+          <article class="code-card">
+            <h3>Запуск для разработки</h3>
+            <p>Нужны Go 1.23+ и Node.js 20+. После запуска откройте <code>http://localhost:5173</code>.</p>
+            <pre><code>cd web
+npm install
+cd ..
+make dev</code></pre>
+          </article>
+          <article class="code-card">
+            <h3>Сборка для Windows</h3>
+            <p>Сервер раздаёт собранный интерфейс из <code>web/dist</code>.</p>
+            <pre><code>cd web
+npm run build
+cd ..
+go build -o taskvector.exe ./cmd/taskvector</code></pre>
+          </article>
+        </div>
+        <p class="note">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <span>Проект в активной разработке: PostgreSQL, уведомления, экран профиля и часть требований v1 ещё не реализованы. Интерфейс и API могут меняться.</span>
+        </p>
+        <p class="download-help">Путь к базе задаётся переменной <code>TV_DB_DSN</code>, адрес сервера — <code>TV_HTTP_ADDR</code>. Пример конфигурации — <code>config.example.yaml</code>. После изменения Go-кода перезапустите backend: он не перезагружается автоматически.</p>
+      </div>
+    </section>
+
+    <section class="section" id="requirements">
+      <div class="container">
+        <div class="section-head">
+          <h2>Системные требования</h2>
+        </div>
+        <div class="requirements-grid">
+          <ul class="req-list">
+            <li>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span>Go 1.23 или новее — для сборки и запуска сервера</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span>Node.js 20 или новее и npm — для сборки интерфейса</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span>Современный браузер с поддержкой cookie — для входа в аккаунт</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span>SQLite встроена в сервер — отдельная СУБД не требуется</span>
+            </li>
+          </ul>
+          <aside class="note-card">
+            <h3>Важно</h3>
+            <p>Готовых установочных файлов нет: приложение собирается из исходного кода.</p>
+            <p>PostgreSQL, уведомления, экран профиля и часть требований v1 ещё не реализованы.</p>
+            <p>Проект находится в разработке: интерфейс и API могут меняться.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="guide">
+      <div class="container">
+        <div class="guide-card">
+          <div>
+            <h2>Документация</h2>
+            <p>Как запустить проект для разработки, собрать его на Windows, настроить базу и адрес сервера — в README.</p>
+            <p>Принятые решения и текущие ограничения описаны в docs/DECISIONS.md.</p>
+          </div>
+          <a class="btn btn-primary" href="https://github.com/iRadioMan/TaskVector#readme" target="_blank" rel="noopener noreferrer">Открыть README</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-copy">© 2026 rad.io</p>
+          <p class="footer-copy">Исходный код «Вектора» доступен на <a href="https://github.com/iRadioMan/TaskVector" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="../">Страница разработчика</a></li>
+          <li><a href="https://github.com/iRadioMan/TaskVector" target="_blank" rel="noopener noreferrer">Исходный код</a></li>
+          <li><a href="https://github.com/iRadioMan/TaskVector/issues" target="_blank" rel="noopener noreferrer">Сообщить об ошибке</a></li>
+        </ul>
+      </div>
+      <p class="footer-legal">Windows — товарный знак Microsoft Corporation. Go — товарный знак Google LLC. Vue.js — товарный знак Evan You. Проект не связан с правообладателями.</p>
+    </div>
+  </footer>
+</body>
+</html>

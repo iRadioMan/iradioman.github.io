@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#F7F9FC">
+  <title>LumenAI — персональный ИИ-ассистент, который работает локально</title>
+  <meta name="description" content="LumenAI — локальный голосовой и текстовый ИИ-ассистент: Qwen 3.5 9B через Ollama, память, навыки, планировщик и утренняя сводка. Рабочий прототип, репозиторий пока закрыт.">
+  <link rel="canonical" href="https://iradioman.github.io/lumenai/">
+  <link rel="icon" href="../assets/img/favicon.png" sizes="32x32" type="image/png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="rad.io">
+  <meta property="og:title" content="LumenAI — персональный ИИ-ассистент, который работает локально">
+  <meta property="og:description" content="LumenAI — локальный голосовой и текстовый ИИ-ассистент: Qwen 3.5 9B через Ollama, память, навыки, планировщик и утренняя сводка. Рабочий прототип, репозиторий пока закрыт.">
+  <meta property="og:url" content="https://iradioman.github.io/lumenai/">
+  <meta property="og:image" content="https://iradioman.github.io/assets/img/lumen-logo.png">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../">
+        <img class="brand-logo" src="../assets/img/lumen-logo.png" alt="" width="32" height="32">
+        <span class="brand-name">Lumen<span class="brand-accent">AI</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a href="../">Страница разработчика</a>
+        <a href="http://t.me/iRadioMan">Telegram</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Хлебные крошки"><a href="../">← Все проекты</a></nav>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="product-lockup">
+              <img src="../assets/img/lumen-logo.png" alt="" width="72" height="72">
+              <div>
+                <p class="eyebrow">Персональный ИИ-ассистент</p>
+                <h1>LumenAI</h1>
+              </div>
+            </div>
+            <p class="slogan">«Уникальный харнесс, рассчитанный именно на общение, — не очередной универсальный агент для кода».</p>
+            <p class="lead">Голосовой и текстовый ассистент, который работает полностью локально. Понимает контекст разговора, хранит память, ведёт заметки, выполняет задачи и готовит утреннюю сводку, не отправляя данные во внешние сервисы.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#features">Возможности</a>
+              <a class="btn btn-secondary" href="#status">Статус прототипа</a>
+            </div>
+            <ul class="trust-list">
+              <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Полностью локально</li>
+              <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Apache-2.0</li>
+              <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Python 3.11+</li>
+            </ul>
+          </div>
+          <figure class="shot shot--logo">
+            <img src="../assets/img/lumen-arch.png" width="512" height="512" alt="Архитектура LumenAI" fetchpriority="high" decoding="async">
+            <figcaption>Архитектура LumenAI. Модель, память, навыки и планировщик работают на вашей машине.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <h2>Что умеет LumenAI</h2>
+          <p>Локальный ассистент для повседневных разговоров, памяти и планирования.</p>
+        </div>
+        <!-- Иконки: Lucide, ISC -->
+        <div class="features-grid">
+          <article class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <h3>Локальный контур</h3>
+            <p>Веб-панель слушает 127.0.0.1, модель запускается через Ollama. Запросы, память и пользовательские данные остаются на вашей машине.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>
+              </svg>
+            </div>
+            <h3>Диалог и голос</h3>
+            <p>Разговор — основной сценарий. Ассистент поддерживает стриминг ответов, режим thinking и голосовой ввод с активацией по имени.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                <path d="M3 5v14a9 3 0 0 0 18 0V5"/>
+                <path d="M3 12a9 3 0 0 0 18 0"/>
+              </svg>
+            </div>
+            <h3>Память</h3>
+            <p>Identity и Notes хранятся на файлах и в SQLite. Контекст-билдер, саммаризация и гибридный поиск помогают удерживать нить разговора.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                <path d="M12 8v4"/>
+                <path d="M12 16h.01"/>
+              </svg>
+            </div>
+            <h3>Навыки и безопасность</h3>
+            <p>Навыки делятся на safe и unsafe. Записи требуют подтверждения, а действия попадают в аудит — ассистент не меняет данные молча.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 2v4"/>
+                <path d="M16 2v4"/>
+                <rect width="18" height="18" x="3" y="4" rx="2"/>
+                <path d="M3 10h18"/>
+                <path d="m9 16 2 2 4-4"/>
+              </svg>
+            </div>
+            <h3>Планировщик</h3>
+            <p>Список задач, планировщик и утренняя сводка. Ассистент помогает держать день в порядке, а не только отвечает на вопросы.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="18" height="18" x="3" y="3" rx="2"/>
+                <path d="m7 15 3-3-3-3"/>
+                <path d="M13 17h4"/>
+              </svg>
+            </div>
+            <h3>Интерфейсы и API</h3>
+            <p>Веб-панель, CLI-чат и OpenAI-compatible API со стримингом. Все каналы работают через единое ядро с памятью и инструментами.</p>
+          </article>
+        </div>
+        <p class="audience">Для тех, кому нужен личный ассистент, который не отправляет переписку и рабочие заметки в облако.</p>
+      </div>
+    </section>
+
+    <section class="section" id="architecture">
+      <div class="container">
+        <div class="download-head">
+          <div>
+            <h2>Как устроен</h2>
+            <p class="version">Три слоя: модель, ядро и интерфейсы. Всё запускается в локальном контуре.</p>
+          </div>
+        </div>
+        <div class="download-list arch-list">
+          <div class="download-row">
+            <span class="os-logo">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="16" height="16" x="4" y="4" rx="2"/>
+                <rect width="6" height="6" x="9" y="9" rx="1"/>
+                <path d="M9 2v2"/><path d="M15 2v2"/><path d="M9 20v2"/><path d="M15 20v2"/>
+                <path d="M2 9h2"/><path d="M2 15h2"/><path d="M20 9h2"/><path d="M20 15h2"/>
+              </svg>
+            </span>
+            <span class="download-copy">
+              <span class="download-title">Модель</span>
+              <span class="download-meta">Qwen 3.5 9B через Ollama. Профили моделей задаются в config.toml.</span>
+            </span>
+            <span class="download-action">Ollama</span>
+          </div>
+
+          <div class="download-row">
+            <span class="os-logo">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2 2 7l10 5 10-5-10-5Z"/>
+                <path d="m2 17 10 5 10-5"/>
+                <path d="m2 12 10 5 10-5"/>
+              </svg>
+            </span>
+            <span class="download-copy">
+              <span class="download-title">Ядро</span>
+              <span class="download-meta">Единый Core: память, контекст-билдер, навыки, аудит и планировщик.</span>
+            </span>
+            <span class="download-action">Python 3.11+</span>
+          </div>
+
+          <div class="download-row">
+            <span class="os-logo">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="14" x="2" y="3" rx="2"/>
+                <path d="M8 21h8"/>
+                <path d="M12 17v4"/>
+              </svg>
+            </span>
+            <span class="download-copy">
+              <span class="download-title">Интерфейсы</span>
+              <span class="download-meta">Веб-панель на 127.0.0.1, голосовой режим, CLI-чат и OpenAI-compatible API.</span>
+            </span>
+            <span class="download-action">Локально</span>
+          </div>
+        </div>
+        <p class="download-help">Голосовые зависимости устанавливаются отдельно, флагом <code>--voice</code>. База и пользовательские данные лежат в <code>data/</code> и не попадают в репозиторий.</p>
+      </div>
+    </section>
+
+    <section class="section" id="status">
+      <div class="container">
+        <div class="section-head">
+          <h2>Статус разработки</h2>
+          <p>Рабочий прототип уже собран. Сейчас идёт доводка голосового режима и стабилизация ядра.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="status-table">
+            <thead>
+              <tr>
+                <th scope="col">Этап</th>
+                <th scope="col">Содержание</th>
+                <th scope="col">Статус</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>M0</td>
+                <td>Каркас, конфиг, интерфейсы, реестр, тесты, CI</td>
+                <td><span class="status-pill">Готово</span></td>
+              </tr>
+              <tr>
+                <td>M1</td>
+                <td>API Handler (OpenAI-compatible, стриминг, thinking), CLI-чат</td>
+                <td><span class="status-pill">Готово</span></td>
+              </tr>
+              <tr>
+                <td>M2</td>
+                <td>Tool loop, память (Identity, Notes), контекст-билдер</td>
+                <td><span class="status-pill">Готово</span></td>
+              </tr>
+              <tr>
+                <td>M3</td>
+                <td>FastAPI и веб-панель</td>
+                <td><span class="status-pill">Готово</span></td>
+              </tr>
+              <tr>
+                <td>M4</td>
+                <td>Логи, саммаризация, гибридный поиск</td>
+                <td><span class="status-pill">Готово</span></td>
+              </tr>
+              <tr>
+                <td>M5</td>
+                <td>Навыки, safe/unsafe, аудит</td>
+                <td><span class="status-pill">Готово</span></td>
+              </tr>
+              <tr>
+                <td>M6</td>
+                <td>Планировщик, to-do, утренняя сводка</td>
+                <td><span class="status-pill">Готово</span></td>
+              </tr>
+              <tr>
+                <td>M7</td>
+                <td>Голосовой режим</td>
+                <td><span class="status-pill status-pill--wip">Интеграция готова, нужна приёмка</span></td>
+              </tr>
+              <tr>
+                <td>M8</td>
+                <td>Доводка и документация</td>
+                <td><span class="status-pill">Готово</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <span>Репозиторий LumenAI пока закрыт. Прототип работает, но требует доработки; голосовой режим ждёт живой приёмки на реальном оборудовании.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="requirements">
+      <div class="container">
+        <div class="section-head">
+          <h2>Системные требования</h2>
+        </div>
+        <div class="requirements-grid">
+          <ul class="req-list">
+            <li>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span>Python 3.11 или новее — прототип проверен на Python 3.12</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span>Запущенный Ollama с моделью из профиля <code>[llm.profiles.main]</code></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span>Windows или Linux — для скриптов setup.bat / run.bat и setup.sh / run.sh</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span>Локальное место для каталогов <code>data/</code> и <code>models/</code></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span>Для голосового режима — дополнительные зависимости, устанавливаемые с флагом <code>--voice</code></span>
+            </li>
+          </ul>
+          <aside class="note-card">
+            <h3>Важно</h3>
+            <p>Репозиторий пока закрыт: исходный код и установочные файлы публично недоступны.</p>
+            <p>LumenAI — локальный харнесс для общения, а не облачный сервис и не универсальный агент для кода.</p>
+            <p>Прототип уже работает, но находится в разработке: интерфейс, конфигурация и API могут меняться.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="guide-card">
+          <div>
+            <h2>Закрытый репозиторий</h2>
+            <p>LumenAI развивается в закрытом контуре: исходный код и сборки пока не опубликованы. Прототип уже работает — сейчас идёт доводка голосового режима и стабилизация ядра.</p>
+            <p>О статусе проекта и доступе к прототипу можно узнать у автора.</p>
+          </div>
+          <a class="btn btn-primary" href="http://t.me/iRadioMan">Написать в Telegram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-copy">© 2026 rad.io</p>
+          <p class="footer-copy">LumenAI распространяется по лицензии Apache-2.0.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="../">Страница разработчика</a></li>
+          <li><a href="http://t.me/iRadioMan">Telegram</a></li>
+        </ul>
+      </div>
+      <p class="footer-legal">Qwen — товарный знак Alibaba Group. Ollama — товарный знак правообладателя. Проект не связан с правообладателями.</p>
+    </div>
+  </footer>
+</body>
+</html>

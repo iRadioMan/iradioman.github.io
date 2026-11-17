@@ -5,30 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#F7F9FC">
-  <title>rad.io — мои проекты</title>
-  <meta name="description" content="Проекты для разных задач. КриптоЛайт — электронная подпись, проверка и шифрование документов на Windows и Astra Linux.">
+  <title>rad.io — проекты и разработка</title>
+  <meta name="description" content="Проекты для разных задач: КриптоЛайт — электронная подпись, Вектор — веб-планировщик задач, LumenAI — локальный ИИ-ассистент. О разработчике: инфраструктура, код, безопасность, железо и звук.">
   <link rel="canonical" href="https://iradioman.github.io/">
   <link rel="icon" href="assets/img/favicon.png" sizes="32x32" type="image/png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="rad.io">
-  <meta property="og:title" content="rad.io — мои проекты">
-  <meta property="og:description" content="Проекты для разных задач. КриптоЛайт — электронная подпись, проверка и шифрование документов на Windows и Astra Linux.">
+  <meta property="og:title" content="rad.io — проекты и разработка">
+  <meta property="og:description" content="Проекты для разных задач: КриптоЛайт — электронная подпись, Вектор — веб-планировщик задач, LumenAI — локальный ИИ-ассистент. О разработчике: инфраструктура, код, безопасность, железо и звук.">
   <meta property="og:url" content="https://iradioman.github.io/">
   <meta property="og:image" content="https://iradioman.github.io/assets/img/cryptolite-screenshot.png">
   <meta property="og:locale" content="ru_RU">
   <link rel="stylesheet" href="assets/css/site.css">
 </head>
-<body>
+<body class="page-home">
   <a class="skip-link" href="#main">Перейти к содержимому</a>
 
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./">
-        <span class="brand-mark" aria-hidden="true"><img src="assets/img/rad.jpg"></span>
-        <span class="brand-name">rad.io - страница разработчика</span>
+        <span class="brand-mark" aria-hidden="true"><img src="assets/img/rad.jpg" width="32" height="32" alt=""></span>
+        <span class="brand-name">rad.io</span>
       </a>
       <nav class="site-nav" aria-label="Основная навигация">
         <a href="#projects">Проекты</a>
+        <a href="#about">Обо мне</a>
         <a href="https://github.com/iRadioMan" target="_blank" rel="noopener noreferrer">GitHub</a>
       </nav>
     </div>
@@ -36,25 +37,57 @@
 
   <main id="main">
     <section class="hero hero--home">
-      <div class="container">
-        <h1>rad.io</h1>
-        <p class="lead">Уникальные проекты под разные задачи.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">Обзор</a>
-          <a class="btn btn-secondary" href="https://github.com/iRadioMan" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <div class="hero-bg" aria-hidden="true">
+        <span class="hero-grid-lines"></span>
+        <span class="hero-orb hero-orb--blue" data-parallax="0.06"></span>
+        <span class="hero-orb hero-orb--teal" data-parallax="-0.04"></span>
+      </div>
+      <div class="container hero-home-grid">
+        <div class="hero-home-copy">
+          <h1>Делаю сложные вещи простыми.</h1>
+          <p class="lead">КриптоЛайт, Вектор и LumenAI — современные программы для подписи документов, планирования и локального ИИ. Понятные интерфейсы, работа без облака, открытые проекты на GitHub.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Смотреть проекты</a>
+            <a class="btn btn-secondary" href="https://github.com/iRadioMan" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+          <ul class="hero-facts">
+            <li><strong>10+</strong><span>проектов</span></li>
+            <li><strong>Windows / Linux</strong><span>платформы</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <span class="hero-visual-ring"></span>
+          <div class="hero-mark" data-parallax="0.02">
+            <img src="assets/img/rad.jpg" width="256" height="256" alt="">
+          </div>
+          <span class="float-chip float-chip--one" data-parallax="0.08">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+            Прикладное ПО
+          </span>
+          <span class="float-chip float-chip--two" data-parallax="-0.06">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+            Windows / Linux
+          </span>
+          <span class="float-chip float-chip--three" data-parallax="0.05">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+            Open-source
+          </span>
         </div>
       </div>
     </section>
 
-    <section class="section" id="projects">
+    <section class="section section--projects" id="projects">
       <div class="container">
-        <div class="section-head">
-          <h2>Проекты</h2>
-          <p>Сейчас доступен один проект. Новые появятся здесь же.</p>
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">Портфолио</p>
+            <h2>Актуальные проекты</h2>
+          </div>
         </div>
         <ul class="program-list">
           <li>
             <a class="program-card" href="cryptolite/">
+              <span class="program-index" aria-hidden="true">01</span>
               <img src="assets/img/cryptolite-logo.png" alt="" width="64" height="64">
               <div class="program-body">
                 <div class="program-title-row">
@@ -71,18 +104,237 @@
               </div>
             </a>
           </li>
+          <li>
+            <a class="program-card" href="taskvector/">
+              <span class="program-index" aria-hidden="true">02</span>
+              <img src="assets/img/taskvector-logo.png" alt="" width="64" height="64">
+              <div class="program-body">
+                <div class="program-title-row">
+                  <h3>Вектор</h3>
+                  <span class="badge badge--wip">В разработке</span>
+                </div>
+                <p>Веб-планировщик задач на Go и Vue 3: списки «Сегодня» и «Предстоящие», категории, приоритеты, сроки и поиск. Данные — в локальной SQLite.</p>
+                <ul class="tag-list">
+                  <li>Веб</li>
+                  <li>Go</li>
+                  <li>Vue 3</li>
+                </ul>
+                <span class="program-link">Открыть страницу <span class="program-arrow" aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="program-card" href="lumenai/">
+              <span class="program-index" aria-hidden="true">03</span>
+              <img src="assets/img/lumen-logo.png" alt="" width="64" height="64">
+              <div class="program-body">
+                <div class="program-title-row">
+                  <h3>LumenAI</h3>
+                  <span class="badge badge--wip">В разработке</span>
+                </div>
+                <p>Персональный голосовой и текстовый ИИ-ассистент. Работает локально: Qwen 3.5 9B через Ollama, память, навыки, планировщик и утренняя сводка.</p>
+                <ul class="tag-list">
+                  <li>Локально</li>
+                  <li>Python</li>
+                  <li>Ollama</li>
+                </ul>
+                <span class="program-link">Открыть страницу <span class="program-arrow" aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
 
-    <section class="section" id="about">
+    <section class="section about-section" id="about">
+      <div class="about-bg" aria-hidden="true">
+        <span class="about-orb" data-parallax="-0.03"></span>
+      </div>
       <div class="container">
-        <div class="about-card">
-          <div>
-            <h2>О разработчике</h2>
-            <p>Я — системный администратор и независимый разработчик прикладного ПО. Чаще всего делаю проекты для себя и знакомых, люблю экспериментировать. Исходный код, релизы и сообщения об ошибках вы можете найти на GitHub.</p>
+        <div class="about-intro">
+          <div class="about-intro-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="8" r="5"/>
+              <path d="M20 21a8 8 0 0 0-16 0"/>
+            </svg>
           </div>
-          <a class="btn btn-secondary" href="https://github.com/iRadioMan" target="_blank" rel="noopener noreferrer">Перейти</a>
+          <div class="about-intro-copy">
+            <p class="eyebrow">Обо мне</p>
+            <h2>Системный администратор, разработчик и исследователь</h2>
+            <p>В IT с 2011 года. Работаю с железом и инфраструктурой, разрабатываю прикладное ПО и занимаюсь информационной безопасностью. Делаю проекты для себя и знакомых, люблю разбираться в устройстве систем — от сетей и ядер Linux до локальных ИИ-моделей.</p>
+            <ul class="about-chips">
+              <li>Инфраструктура</li>
+              <li>Разработка</li>
+              <li>Информационная безопасность</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="expertise-head">
+          <h2>Компетенции</h2>
+          <p>Девять направлений — от железа и сетей до звука и психотерапии.</p>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="8" x="2" y="2" rx="2"/>
+                <rect width="20" height="8" x="2" y="14" rx="2"/>
+                <path d="M6 6h.01"/>
+                <path d="M6 18h.01"/>
+              </svg>
+            </div>
+            <h3>Инфраструктура и сети</h3>
+            <p>Понимаю компьютер на уровне архитектуры, сети и модели OSI. Администрирую Windows Server и Ubuntu/Debian, собираю ядра Linux и собственные сборки ОС под конкретное железо.</p>
+            <ul class="tag-list">
+              <li>Windows</li>
+              <li>Linux</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m16 18 6-6-6-6"/>
+                <path d="m8 6-6 6 6 6"/>
+              </svg>
+            </div>
+            <h3>Разработка</h3>
+            <p>Прикладные приложения на .NET (ADO.NET, Entity Framework), веб-приложения на PHP/Laravel, HTML, CSS и JavaScript. Пишу CMD- и Shell-скрипты, отлаживаю и сопровождаю код.</p>
+            <ul class="tag-list">
+              <li>.NET</li>
+              <li>PHP / Laravel</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <h3>Безопасность и реверс</h3>
+            <p>Исследую информационную безопасность: основы Assembly x86-64, реверс-инжиниринг в x64dbg, IDA, Ghidra и Binary Ninja. Настраиваю рабочие места для ЭЦП и сопровождаю сертификаты УКЭП.</p>
+            <ul class="tag-list">
+              <li>Assembly</li>
+              <li>IDA / Ghidra</li>
+              <li>ЭЦП</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="16" height="16" x="4" y="4" rx="2"/>
+                <rect width="6" height="6" x="9" y="9" rx="1"/>
+                <path d="M9 2v2"/>
+                <path d="M15 2v2"/>
+                <path d="M9 20v2"/>
+                <path d="M15 20v2"/>
+                <path d="M2 9h2"/>
+                <path d="M2 15h2"/>
+                <path d="M20 9h2"/>
+                <path d="M20 15h2"/>
+              </svg>
+            </div>
+            <h3>Железо и электроника</h3>
+            <p>Собираю ПК и подбираю комплектующие, выполняю блочный ремонт, работаю мультиметром и паяльной станцией, включая SMD-монтаж. Обслуживаю офисную технику, ЛВС и сетевое оборудование.</p>
+            <ul class="tag-list">
+              <li>Сборка ПК</li>
+              <li>ЛВС</li>
+              <li>Ремонт</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/>
+                <path d="M5 3v4"/>
+                <path d="M19 17v4"/>
+                <path d="M3 5h4"/>
+                <path d="M17 19h4"/>
+              </svg>
+            </div>
+            <h3>ИИ и автоматизация</h3>
+            <p>Пишу промпты для агентов, разворачиваю и конфигурирую локальные LLM. Строю инструменты, которые работают с данными на своей машине и не зависят от облачных сервисов.</p>
+            <ul class="tag-list">
+              <li>Ollama</li>
+              <li>Промпты</li>
+              <li>Локальные LLM</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 18V5l12-2v13"/>
+                <circle cx="6" cy="18" r="3"/>
+                <circle cx="18" cy="16" r="3"/>
+              </svg>
+            </div>
+            <h3>Звук и музыка</h3>
+            <p>Занмаюсь сведением и мастерингом, работаю в FL Studio, iZotope RX и Audacity. Играю на фортепиано и гитаре, разбираюсь в музыкальной теории и терминологии.</p>
+            <ul class="tag-list">
+              <li>FL Studio</li>
+              <li>iZotope RX</li>
+              <li>Фортепиано</li>
+              <li>Гитара</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="18" height="18" x="3" y="3" rx="2"/>
+                <circle cx="9" cy="9" r="2"/>
+                <path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/>
+              </svg>
+            </div>
+            <h3>Документы, фото и графика</h3>
+            <p>Продвинутый Microsoft Office и делопроизводство, Photoshop, Acrobat, FineReader и DaVinci Resolve. Снимаю и обрабатываю фото, понимаю композицию и параметры экспозиции.</p>
+            <ul class="tag-list">
+              <li>Microsoft Office</li>
+              <li>Photoshop</li>
+              <li>DaVinci Resolve</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/>
+                <path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/>
+                <circle cx="12" cy="12" r="2"/>
+                <path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/>
+                <path d="M19.1 4.9C23 8.8 23 15.2 19.1 19.1"/>
+              </svg>
+            </div>
+            <h3>Радиосвязь</h3>
+            <p>Разбираюсь в принципах радиосвязи и терминологии, работаю с коротковолновыми трансиверами, провожу QSO и занимаюсь радиосталкингом.</p>
+            <ul class="tag-list">
+              <li>КВ</li>
+              <li>QSO</li>
+              <li>Радиосталкинг</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+              </svg>
+            </div>
+            <h3>Психотерапия</h3>
+            <p>Интересуюсь когнитивной психотерапией и психоанализом. Применяю подходы для работы с внутренними конфликтами и паническими атаками.</p>
+            <ul class="tag-list">
+              <li>Когнитивная терапия</li>
+              <li>Психоанализ</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
@@ -96,5 +348,28 @@
       </ul>
     </div>
   </footer>
+
+  <script>
+    (() => {
+      const layers = document.querySelectorAll('[data-parallax]');
+      if (!layers.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      let frame = 0;
+      const update = () => {
+        const offset = window.scrollY;
+        layers.forEach((layer) => {
+          const speed = Number(layer.dataset.parallax) || 0;
+          layer.style.transform = `translate3d(0, ${(offset * speed).toFixed(2)}px, 0)`;
+        });
+        frame = 0;
+      };
+      const requestUpdate = () => {
+        if (!frame) frame = window.requestAnimationFrame(update);
+      };
+
+      window.addEventListener('scroll', requestUpdate, { passive: true });
+      update();
+    })();
+  </script>
 </body>
 </html>
