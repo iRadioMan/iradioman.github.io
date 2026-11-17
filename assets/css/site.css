@@ -272,7 +272,7 @@ section[id] {
 
 .section-head p {
   margin-top: 10px;
-  max-width: 60ch;
+  /*max-width: 60ch;*/
   color: var(--muted);
 }
 
@@ -561,6 +561,7 @@ section[id] {
   background: var(--warning-soft);
   color: var(--warning);
   font-size: 0.9rem;
+  margin-top: 20px;
 }
 
 .note svg {
@@ -585,7 +586,7 @@ section[id] {
 
 .req-list {
   display: grid;
-  gap: 12px;
+  gap: 19px;
 }
 
 .req-list li {
