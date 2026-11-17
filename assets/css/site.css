@@ -117,6 +117,7 @@ section[id] {
   z-index: 10;
   background: #fff;
   border-bottom: 1px solid var(--border);
+  opacity: 95%;
 }
 
 .header-inner {
